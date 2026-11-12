@@ -162,6 +162,25 @@
     margin: -35px 0;
   }
 
+  .profile-photo {
+    width: min(78vw, 320px);
+    height: 360px;
+    max-width: 100%;
+  }
+
+  .floating-tag {
+    font-size: 11px;
+    padding: 9px 12px;
+  }
+
+  .tag-top {
+    margin: 9px;
+  }
+
+  .tag-bottom {
+    margin: 20px;
+  }
+
   .hero-buttons {
     width: 100%;
   }
@@ -358,3 +377,256 @@
 }
 
 
+/* ==========================================
+   FINAL RESPONSIVE FIXES
+   ========================================== */
+
+/* Global overflow protection */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+/* ==========================================
+   TABLET - 768px to 1024px
+   ========================================== */
+
+@media (max-width: 1024px) {
+
+  .hero-layout {
+    gap: 15px;
+  }
+
+  .hero-content {
+    min-width: 0;
+  }
+
+  .hero-visual {
+    min-width: 0;
+    min-height: 350px;
+  }
+
+  .profile-visual {
+    max-width: 100%;
+  }
+
+  .about-layout,
+  .contact-layout {
+    gap: 25px;
+  }
+
+  .skills-grid {
+    gap: 18px;
+  }
+
+  .projects-grid {
+    gap: 20px;
+  }
+}
+
+/* ==========================================
+   MOBILE - 768px
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    min-height: auto;
+    padding: 110px 0 50px;
+  }
+
+  .hero-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-card {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    width: 100%;
+  }
+
+  .profile-visual {
+    transform: scale(0.85);
+    transform-origin: center;
+    margin: 0;
+  }
+
+  .section {
+    padding: 65px 0;
+  }
+
+  .about-layout,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE - 480px
+   ========================================== */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .hero-section {
+    padding: 95px 0 35px;
+  }
+
+  .hero-layout {
+    gap: 15px;
+  }
+
+  .hero-card {
+    padding: 25px 16px;
+  }
+
+  .hero-heading {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-role {
+    font-size: 16px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .hero-visual {
+    min-height: 300px;
+  }
+
+  .profile-visual {
+    transform: scale(0.78);
+    margin: 0;
+  }
+
+  .profile-photo {
+    width: min(78vw, 300px);
+    height: 340px;
+    object-fit: cover;
+  }
+
+  .hero-stats {
+    gap: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .project-preview {
+    height: 190px;
+  }
+
+  .timeline-card {
+    padding: 18px;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 20px;
+  }
+
+  .footer-container {
+    gap: 20px;
+  }
+}
+
+/* ==========================================
+   EXTRA SMALL MOBILE - 360px
+   ========================================== */
+
+@media (max-width: 360px) {
+
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .profile-visual {
+    transform: scale(0.70);
+  }
+
+  .profile-photo {
+    max-width: 260px;
+  }
+
+  .hero-stats {
+    gap: 12px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+}
