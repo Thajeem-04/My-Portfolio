@@ -13,7 +13,7 @@ export default function ProfileVisual() {
       <div className="profile-orbit orbit-two" />
 
       <div className="profile-photo">
-        <img src="./public/images/profile.jpeg" alt="Mohamed Thajeem" className="profile-image"/>
+        <img src="/images/profile.jpeg" alt="Mohamed Thajeem" className="profile-image" />
       </div>
 
       <div className="floating-tag tag-top">
